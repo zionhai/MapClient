@@ -1,7 +1,9 @@
 import { Subject } from 'rxjs';
 import { Sample } from 'src/app/models/Sample';
 import { Site } from 'src/app/models/Site';
+import { Injectable } from "@angular/core";
 
+@Injectable()
 export class SiteService
 {
     private sites: Site[] = [];
