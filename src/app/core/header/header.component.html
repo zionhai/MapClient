@@ -1,0 +1,36 @@
+<div class="jumbotron bg-dark text-left py-3 rounded-0 " id="sticky">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="h4" id="header">Map Client</h3>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="userHello"  *ngIf="authenticatedUser">Hello, {{ authenticatedUser }} </div>
+          <div class="userHello" *ngIf="!authenticatedUser">
+            Hello, Guest
+          </div>
+        </div>
+        <div class="row">
+  
+                <a *ngIf="authenticatedUser"  id="auth" 
+                  (click)="onLogout()">Logout</a>
+      
+                <a *ngIf="!authenticatedUser" id="auth" 
+                  (click)="onLogin()">Login</a>
+  
+        </div>
+        <div class="row">
+  
+        </div>
+      </div>
+  
+  
+    </div>
+  
+  
+  <br />
+  
+  
+ 
+  
+  </div>
